@@ -1,4 +1,4 @@
-# ðŸš€ CI/CD Pipeline with AWS CodeBuild
+€ CI/CD Pipeline with AWS CodeBuild
 
 ![Terraform](https://img.shields.io/badge/Terraform-Used-blueviolet)
 ![AWS Certified](https://img.shields.io/badge/AWS-Certified-yellowgreen)
