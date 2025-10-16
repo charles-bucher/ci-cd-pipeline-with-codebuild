@@ -1,6 +1,14 @@
 📦 CI/CD Pipeline with AWS CodeBuild
 Terraform • AWS Certified • CodeBuild • CI/CD • MIT License
 
+![Terraform](https://img.shields.io/badge/Terraform-Enabled-blueviolet?logo=terraform)
+![AWS](https://img.shields.io/badge/AWS-CodeBuild-orange?logo=amazon-aws)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Automated-success?logo=github-actions)
+![License](https://img.shields.io/badge/License-MIT-green)
+![CloudReady](https://img.shields.io/badge/Cloud-Engineer%20Ready-blue?logo=cloudflare)
+![CertAligned](https://img.shields.io/badge/Cert-Aligned%20Project-yellow?logo=awslambda)
+
+
 🧠 TL;DR
 This repo demonstrates how to build a modular, cert-aligned CI/CD pipeline using AWS CodeBuild, CodePipeline, and Terraform. It’s designed for cloud engineers who want automated deployments, clean infrastructure, and recruiter-ready polish.
 
