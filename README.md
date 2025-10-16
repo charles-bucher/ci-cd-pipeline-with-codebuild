@@ -14,7 +14,7 @@ This repo demonstrates how to build a modular, cert-aligned CI/CD pipeline using
 
 ---
 
-## ðŸŽ¯ Project Overview
+## ¯ Project Overview
 
 Modern infrastructure demands more than just provisioning â€” it requires continuous integration, automated testing, and zero-touch deployments. This project delivers a full CI/CD pipeline using AWS-native tools, built with Terraform for repeatability and clarity.
 
@@ -22,7 +22,7 @@ Whether you're deploying a static site, containerized app, or Lambda function, t
 
 ---
 
-## ðŸ§± Architecture
+##  Architecture
 [GitHub Repo] â†’ [CodePipeline] â†’ [CodeBuild] â†’ [Deploy to S3 / ECS / Lambda]
 
 - **Source**: GitHub webhook triggers pipeline
@@ -32,7 +32,7 @@ Whether you're deploying a static site, containerized app, or Lambda function, t
 
 ---
 
-## ðŸ“¸ Screenshots
+## ¸ Screenshots
 
 #### Pipeline Flow  
 ![Pipeline](screenshots/pipeline-flow.png)
@@ -42,31 +42,31 @@ Whether you're deploying a static site, containerized app, or Lambda function, t
 
 ---
 
-## ðŸ”§ Key Features
+##  Key Features
 
-### âœ… Continuous Integration
+### Continuous Integration
 - GitHub-triggered builds
 - Automated testing and linting
 - Buildspec versioning
 
-### âœ… Continuous Delivery
+###  Continuous Delivery
 - Zero-touch deployment to S3, ECS, or Lambda
 - Environment-specific configs
 - Rollback-ready architecture
 
-### âœ… Terraform Automation
+### Terraform Automation
 - Modular `.tf` files for CodeBuild, CodePipeline, IAM, and S3
 - Parameterized variables for flexibility
 - State management and backend support
 
-### âœ… Monitoring & Alerts
+###  Monitoring & Alerts
 - CloudWatch logs for build visibility
 - SNS notifications for build status
 - IAM roles scoped for least privilege
 
 ---
 
-## ðŸ§ª How to Deploy
+## How to Deploy
 
 ```bash
 # Initialize Terraform
@@ -91,15 +91,15 @@ terraform apply
 - You write modular, cert-aligned Terraform
 - You build pipelines that scale, alert, and recover
 
-ðŸ§¼ Repo Hygiene
+ Repo Hygiene
 - [x] Modular Terraform files
 - [x] Screenshots organized in /screenshots
 - [x] .gitignore tuned for CI/CD workflows
 - [x] LICENSE, CONTRIBUTING, SECURITY, CODE_OF_CONDUCT
 - [x] README with TL;DR, badges, and architecture diagram
 
-ðŸ“ˆ SEO Tags
+ SEO Tags
 aws-codebuild ci-cd-pipeline terraform cloud-engineer devops infrastructure-as-code codepipeline automated-deployment cloudwatch sns github-actions aws-certification
 
-ðŸ“œ License
+License
 This project is licensed under the MIT License.
