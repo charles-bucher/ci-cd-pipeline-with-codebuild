@@ -1,80 +1,72 @@
-🚀 CI/CD Pipeline with AWS CodeBuild — From Idea to Automation
+# 🚀 CI/CD Pipeline with AWS CodeBuild — End-to-End Automation
 
-This project is part of my journey from Felon2Cloud — where I’m proving that dedication, self-learning, and grit can turn any background into a cloud engineering success story.
+This repository demonstrates **end-to-end Continuous Integration and Continuous Deployment (CI/CD)** using AWS CodePipeline, CodeBuild, and Terraform. It provides a production-ready example of automating build, test, and deployment workflows.
 
-I built this repository to demonstrate end-to-end CI/CD automation using AWS CodePipeline, CodeBuild, and Terraform — the same tools used by top DevOps teams to deploy code reliably and securely.
+---
 
-🧠 What This Project Does
+## 🧠 What This Project Does
 
-This repo sets up a complete Continuous Integration and Continuous Deployment (CI/CD) pipeline that:
+This pipeline:
 
-Automatically builds and tests code every time it’s pushed to GitHub.
+- Automatically builds and tests code every time it’s pushed to GitHub.
+- Deploys infrastructure and applications using **Terraform** and **AWS CodeBuild**.
+- Maintains a modular, scalable, and production-ready architecture.
 
-Deploys infrastructure and applications using Terraform and AWS CodeBuild.
+---
 
-Keeps the entire system modular, scalable, and production-ready.
+## ⚙️ Tech Stack
 
-I wanted to show that I can not only write code — but also automate how it moves from developer to deployment.
+- **AWS CodePipeline** – Orchestrates the pipeline flow
+- **AWS CodeBuild** – Builds, tests, and packages artifacts
+- **Terraform** – Infrastructure as Code (IaC)
+- **GitHub** – Source control and pipeline trigger
+- **Bash Scripts** – Local automation for validation and build steps
 
-⚙️ Tech Stack
+---
 
-AWS CodePipeline – Orchestrates the entire flow
+## 🧩 Repo Structure
 
-AWS CodeBuild – Builds, tests, and packages artifacts
-
-Terraform – Infrastructure as Code (IaC)
-
-GitHub – Source control and pipeline trigger
-
-Bash Scripts – Local automation for validation and build steps
-
-🧩 Repo Structure
 ci-cd-pipeline-with-codebuild/
-├── diagrams/         # Architecture and data flow visuals
-├── environments/     # Terraform configurations by environment
-├── modules/          # Reusable Terraform modules
-├── scripts/          # Local automation scripts
-├── screenshots/      # Visual examples of the pipeline and AWS setup
+├── diagrams/ # Architecture and data flow visuals
+├── environments/ # Terraform configurations by environment
+├── modules/ # Reusable Terraform modules
+├── scripts/ # Local automation scripts
+├── screenshots/ # Pipeline and AWS setup examples
 └── README.md
 
-🔧 How to Use
+yaml
+Copy code
 
-Clone the repo:
+---
 
+## 🔧 How to Use
+
+1. Clone the repository:
+
+```bash
 git clone https://github.com/charles-bucher/ci-cd-pipeline-with-codebuild.git
 cd ci-cd-pipeline-with-codebuild
-
-
 Initialize Terraform:
 
+bash
+Copy code
 terraform init
 terraform apply
+Push your code to GitHub to automatically trigger the AWS CodePipeline.
 
+💡 Key Learning Outcomes
+Designing and deploying a real-world CI/CD pipeline from scratch.
 
-Push your code to trigger the AWS CodePipeline and watch it deploy automatically.
+Managing AWS IAM roles, permissions, and CodeBuild artifacts.
 
-💡 What I Learned
+Implementing clean automation, infrastructure versioning, and error handling.
 
-How to design and deploy a real-world CI/CD pipeline from scratch.
-
-How to manage AWS IAM roles, permissions, and CodeBuild artifacts.
-
-The importance of clean automation, infrastructure versioning, and error handling.
-
-That persistence beats perfection — every time.
-
-🔥 Why This Matters
-
-I’m building a portfolio of real, working cloud projects to prove one thing:
-
-You don’t need a perfect past to build a powerful future.
-
-This project represents my technical growth, consistency, and commitment to mastering Cloud Engineering.
+Structuring pipelines for scalability and production readiness.
 
 📫 Connect With Me
-
-If you’re in DevOps, cloud, or tech leadership — I’d love to connect, collaborate, or learn from you.
-
 🧑‍💻 GitHub: charles-bucher
 
 💼 LinkedIn: linkedin.com/in/charlesbucher
+
+yaml
+
