@@ -1,32 +1,23 @@
 🚀 CI/CD Pipeline with AWS CodeBuild — From Idea to Production
 
-This project is part of my journey as a self-taught cloud engineer, demonstrating that persistence, curiosity, and hands-on experimentation can turn any background into cloud expertise.
+TL;DR: Modular CI/CD pipeline demonstrating end-to-end automation. Automatically builds, tests, and deploys code from GitHub to S3, ECS, or Lambda. Designed for cloud engineers to showcase real-world DevOps skills, Infrastructure-as-Code best practices, and production-ready automation.
 
-I built this pipeline to showcase end-to-end CI/CD automation, applying AWS best practices and Terraform Infrastructure-as-Code to deploy scalable, secure, production-ready systems.
+🧠 Purpose & Context
 
-🧠 What This Project Does
+I built this pipeline as part of my journey as a self-taught cloud engineer:
 
-Automatic build & test: Every code push to GitHub triggers the pipeline
+Turned a delivery driver background into hands-on cloud expertise.
 
-Infrastructure deployment: Uses Terraform and AWS CodeBuild to deploy to S3, ECS, or Lambda
+Demonstrate real-world CI/CD automation with AWS and Terraform.
 
-Production-ready features:
+Show scalable, secure, and production-ready infrastructure.
 
-Modular architecture
+This is more than a lab—every component is designed to mimic production standards.
 
-Error handling & monitoring
+🧱 Architecture Overview
+GitHub ──> CodePipeline ──> CodeBuild ──> Test & Package ──> Terraform ──> Deploy to S3 / ECS / Lambda
 
-IAM security and least-privilege principles
-
-Multi-environment scalability
-
-Measurable impact:
-
-Reduces manual deployment time by ~80% (~2 hours saved per release)
-
-Automates 100% of build, test, and deployment steps
-
-🖼️ Pipeline Visuals
+Screenshots
 
 IAM Role Configuration:
 
@@ -43,78 +34,118 @@ S3 Deployment Pipeline:
 Pipeline Stages:
 
 
-ASCII fallback for quick reference:
+⚙️ What This Project Does
 
-GitHub
-   │
-   ▼
-CodePipeline
-   │
-   ▼
-CodeBuild ──> Test & Package
-   │
-   ▼
-Terraform ──> Deploy to S3 / ECS / Lambda
+Automatic Build & Test: Triggers pipeline for every GitHub push.
 
-⚙️ Tech Stack
+Infrastructure Deployment: Uses Terraform & CodeBuild to deploy to S3, ECS, or Lambda.
 
-AWS CodePipeline – Orchestrates the CI/CD workflow
+Production-Ready Features:
 
-AWS CodeBuild – Builds, tests, and packages artifacts
+Modular architecture for reusability and scalability.
 
-Terraform – Infrastructure as Code (IaC)
+Error handling, logging, and monitoring for stability.
 
-GitHub – Source control and trigger for pipeline
+IAM security and least-privilege enforcement.
 
-Bash Scripts – Local automation for validation, linting, and build steps
+Multi-environment support (dev, staging, production).
 
-🧩 Repository Structure
-ci-cd-pipeline-with-codebuild/
-├── diagrams/      # Architecture diagrams & pipeline visuals
-├── environments/  # Terraform configurations per environment
-├── modules/       # Reusable Terraform modules
-├── scripts/       # Local automation scripts
-├── screenshots/   # Pipeline and AWS setup examples
-└── README.md      # Project documentation
+Measurable Impact:
 
-🔧 How to Use
+Reduces manual deployment time by ~80% (~2 hours saved per release).
 
-Clone the repository:
+Automates 100% of build, test, and deployment steps.
+
+🚀 Deployment Steps
+
+Clone Repository
 
 git clone https://github.com/charles-bucher/ci-cd-pipeline-with-codebuild.git
 cd ci-cd-pipeline-with-codebuild
 
 
-Initialize Terraform and deploy:
+Initialize Terraform & Apply
 
 terraform init
 terraform apply
 
 
-Push code changes to GitHub to automatically trigger the AWS CodePipeline.
+Push Code to GitHub
+
+Automatically triggers AWS CodePipeline.
 
 💡 Key Learning Outcomes
 
-Designed and deployed a real-world CI/CD pipeline from scratch
+Designed and deployed a real-world CI/CD pipeline from scratch.
 
-Managed AWS IAM roles, policies, and CodeBuild artifacts securely
+Managed AWS IAM roles, policies, and CodeBuild artifacts securely.
 
-Implemented error handling and modularity for maintainability and scalability
+Implemented error handling and modularity for maintainability and scalability.
 
-Learned to document and visualize infrastructure, making deployments understandable and reproducible
+Learned to document and visualize infrastructure, making deployments understandable and reproducible.
 
 📈 Measurable Impact
 
-Deployment automation: 100% of builds, tests, and deployments run automatically
+Deployment Automation: 100% of builds, tests, and deployments run automatically.
 
-Time savings: Reduced manual deployment and verification by ~80% (~2 hours per release)
+Time Savings: Reduced manual deployment by ~80% (~2 hours per release).
 
-Environment scaling: Modular Terraform modules allow easy replication for dev, staging, and production
+Environment Scaling: Modular Terraform modules allow easy replication for dev, staging, and production.
 
-📫 Connect With Me
+🧰 Tools Used
+
+AWS CodePipeline – CI/CD orchestration.
+
+AWS CodeBuild – Builds, tests, packages artifacts.
+
+Terraform – Infrastructure as Code (IaC).
+
+GitHub – Source control and pipeline trigger.
+
+Bash Scripts – Local automation, linting, validation, and build steps.
+
+📚 Skills Demonstrated
+
+CI/CD pipeline design and deployment.
+
+AWS CodePipeline & CodeBuild orchestration.
+
+Terraform modules and environment management.
+
+Secure IAM role and permissions management.
+
+Production-grade automation with error handling.
+
+Documentation and infrastructure visualization.
+
+🗂 Repository Structure
+ci-cd-pipeline-with-codebuild/
+├── README.md
+├── diagrams/          # Architecture diagrams & pipeline visuals
+├── environments/      # Terraform configurations per environment
+├── modules/           # Reusable Terraform modules
+├── scripts/           # Local automation scripts
+├── screenshots/       # Pipeline and AWS setup examples
+└── LICENSE
+
+💼 About Me
+
+Charles – Cloud Engineer-in-training. Obsessed with building secure, scalable, and production-ready cloud systems.
 
 GitHub: charles-bucher
 
-LinkedIn: linkedin.com/in/charlesbucher
+LinkedIn: charles-bucher
 
-⚡ “From delivering packages to deploying infrastructure—anything is possible with focus, hands-on practice, and persistence.”
+🎓 Certification Alignment
+
+AWS Certified Solutions Architect – Associate
+
+AWS Certified DevOps Engineer – Professional (in progress)
+
+Certified Kubernetes Administrator (CKA) (on deck)
+
+Terraform Associate
+
+📝 License
+
+Open-source, available for educational and portfolio purposes
