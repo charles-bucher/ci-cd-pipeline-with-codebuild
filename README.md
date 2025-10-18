@@ -1,105 +1,80 @@
-# 🚀 CI/CD Pipeline with AWS CodeBuild
+🚀 CI/CD Pipeline with AWS CodeBuild — From Idea to Automation
 
-![Terraform](https://img.shields.io/badge/Terraform-Used-blueviolet)
-![AWS Certified](https://img.shields.io/badge/AWS-Certified-yellowgreen)
-![CodeBuild](https://img.shields.io/badge/AWS-CodeBuild-blue)
-![CI/CD](https://img.shields.io/badge/CI--CD-Automated-success)
-![License](https://img.shields.io/github/license/charles-bucher/ci-cd-pipeline-with-codebuild)
+This project is part of my journey from Felon2Cloud — where I’m proving that dedication, self-learning, and grit can turn any background into a cloud engineering success story.
 
----
+I built this repository to demonstrate end-to-end CI/CD automation using AWS CodePipeline, CodeBuild, and Terraform — the same tools used by top DevOps teams to deploy code reliably and securely.
 
-### TL;DR
+🧠 What This Project Does
 
-This repo demonstrates how to build a modular, cert-aligned CI/CD pipeline using AWS CodeBuild, CodePipeline, and Terraform. It’s designed for cloud engineers who want automated deployments, clean infrastructure, and recruiter-ready polish.
+This repo sets up a complete Continuous Integration and Continuous Deployment (CI/CD) pipeline that:
 
----
+Automatically builds and tests code every time it’s pushed to GitHub.
 
-## 🎯 Project Overview
+Deploys infrastructure and applications using Terraform and AWS CodeBuild.
 
-Modern infrastructure demands more than just provisioning — it requires continuous integration, automated testing, and zero-touch deployments. This project delivers a full CI/CD pipeline using AWS-native tools, built with Terraform for repeatability and clarity.
+Keeps the entire system modular, scalable, and production-ready.
 
-Whether you're deploying a static site, containerized app, or Lambda function, this pipeline adapts to your workflow and scales with your ambition.
+I wanted to show that I can not only write code — but also automate how it moves from developer to deployment.
 
----
+⚙️ Tech Stack
 
-## 🧱 Architecture
-[GitHub Repo] → [CodePipeline] → [CodeBuild] → [Deploy to S3 / ECS / Lambda]
+AWS CodePipeline – Orchestrates the entire flow
 
-- **Source**: GitHub webhook triggers pipeline
-- **Build**: CodeBuild runs tests, linting, and packaging
-- **Deploy**: Artifacts pushed to S3, ECS, or Lambda
-- **Notifications**: SNS alerts on success/failure
+AWS CodeBuild – Builds, tests, and packages artifacts
 
----
+Terraform – Infrastructure as Code (IaC)
 
-## 📸 Screenshots
+GitHub – Source control and pipeline trigger
 
-#### Pipeline Flow  
-![Pipeline](screenshots/pipeline-flow.png)
+Bash Scripts – Local automation for validation and build steps
 
-#### Build Logs  
-![Build Logs](screenshots/codebuild-logs.png)
+🧩 Repo Structure
+ci-cd-pipeline-with-codebuild/
+├── diagrams/         # Architecture and data flow visuals
+├── environments/     # Terraform configurations by environment
+├── modules/          # Reusable Terraform modules
+├── scripts/          # Local automation scripts
+├── screenshots/      # Visual examples of the pipeline and AWS setup
+└── README.md
 
----
+🔧 How to Use
 
-## 🔧 Key Features
+Clone the repo:
 
-### ✅ Continuous Integration
-- GitHub-triggered builds
-- Automated testing and linting
-- Buildspec versioning
+git clone https://github.com/charles-bucher/ci-cd-pipeline-with-codebuild.git
+cd ci-cd-pipeline-with-codebuild
 
-### ✅ Continuous Delivery
-- Zero-touch deployment to S3, ECS, or Lambda
-- Environment-specific configs
-- Rollback-ready architecture
 
-### ✅ Terraform Automation
-- Modular `.tf` files for CodeBuild, CodePipeline, IAM, and S3
-- Parameterized variables for flexibility
-- State management and backend support
+Initialize Terraform:
 
-### ✅ Monitoring & Alerts
-- CloudWatch logs for build visibility
-- SNS notifications for build status
-- IAM roles scoped for least privilege
-
----
-
-## 🧪 How to Deploy
-
-```bash
-# Initialize Terraform
 terraform init
-
-# Preview changes
-terraform plan
-
-# Apply infrastructure
 terraform apply
-📋 Tech Stack
-- AWS CodeBuild – Build automation
-- AWS CodePipeline – CI/CD orchestration
-- Terraform – Infrastructure as Code
-- GitHub – Source control and webhook triggers
-- CloudWatch – Logging and metrics
-- SNS – Notifications
 
-🧠 What This Proves
-- You understand CI/CD beyond buzzwords — with real infrastructure
-- You can automate deployments with AWS-native tools
-- You write modular, cert-aligned Terraform
-- You build pipelines that scale, alert, and recover
 
-🧼 Repo Hygiene
-- [x] Modular Terraform files
-- [x] Screenshots organized in /screenshots
-- [x] .gitignore tuned for CI/CD workflows
-- [x] LICENSE, CONTRIBUTING, SECURITY, CODE_OF_CONDUCT
-- [x] README with TL;DR, badges, and architecture diagram
+Push your code to trigger the AWS CodePipeline and watch it deploy automatically.
 
-📈 SEO Tags
-aws-codebuild ci-cd-pipeline terraform cloud-engineer devops infrastructure-as-code codepipeline automated-deployment cloudwatch sns github-actions aws-certification
+💡 What I Learned
 
-📜 License
-This project is licensed under the MIT License.
+How to design and deploy a real-world CI/CD pipeline from scratch.
+
+How to manage AWS IAM roles, permissions, and CodeBuild artifacts.
+
+The importance of clean automation, infrastructure versioning, and error handling.
+
+That persistence beats perfection — every time.
+
+🔥 Why This Matters
+
+I’m building a portfolio of real, working cloud projects to prove one thing:
+
+You don’t need a perfect past to build a powerful future.
+
+This project represents my technical growth, consistency, and commitment to mastering Cloud Engineering.
+
+📫 Connect With Me
+
+If you’re in DevOps, cloud, or tech leadership — I’d love to connect, collaborate, or learn from you.
+
+🧑‍💻 GitHub: charles-bucher
+
+💼 LinkedIn: linkedin.com/in/charlesbucher
